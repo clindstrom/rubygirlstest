@@ -3,7 +3,7 @@
 <% @ideas.each do |idea| %>
 <div class="row">
   <div class="span4">
-   <h1><%= link_to idea.name, idea %></h1>
+   <h2><%= link_to idea.name, idea %></h2>
    <%= idea.description %>
     <%= image_tag idea.picture_url, :width => '100%' if idea.picture.present?%>
     
